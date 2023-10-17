@@ -70,12 +70,23 @@ class Program
         {
             Console.WriteLine("Ведено не трехзначное число.");
         }
-        Console.WriteLine(s[2]);
+        Console.WriteLine(s[1]);
     }
 
     private static void Task13()
     {
-        throw new NotImplementedException();
+        Console.Write("Enter the num");
+        string a = Console.ReadLine();
+        TheЕршквNum(a);
+    }
+
+    private static void TheЕршквNum(string? s)
+    {
+        if (s.Length < 3)
+        {
+            Console.WriteLine("Третьей цифры нет.");
+        }
+        Console.WriteLine(s[2]);
     }
 
     private static void Task15(string a)
