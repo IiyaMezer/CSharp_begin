@@ -59,7 +59,7 @@ class Program
 
     private static void Task10()
     {
-        Console.Write("Enter the num");
+        Console.Write("Enter the num: ");
         string a = Console.ReadLine() ;
         TheSecondNum(a);
     }
@@ -75,7 +75,7 @@ class Program
 
     private static void Task13()
     {
-        Console.Write("Enter the num");
+        Console.Write("Enter the num: ");
         string a = Console.ReadLine();
         TheЕршквNum(a);
     }
@@ -89,8 +89,26 @@ class Program
         Console.WriteLine(s[2]);
     }
 
-    private static void Task15(string a)
+    private static void Task15()
     {
- 
+        Console.Write("Enter day of the week: ");
+        int a =Convert.ToInt32(Console.ReadLine());
+        DayOfWeek(a);
+
+    }
+
+    private static void DayOfWeek(int a)
+    {
+        if (a < 8 && a > 0)
+        {
+            if (a == 6 || a==7)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+        }
     }
 }
