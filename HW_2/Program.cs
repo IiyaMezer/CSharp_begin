@@ -77,10 +77,10 @@ class Program
     {
         Console.Write("Enter the num: ");
         string a = Console.ReadLine();
-        TheЕршквNum(a);
+        TheThirdNum(a);
     }
 
-    private static void TheЕршквNum(string? s)
+    private static void TheThirdNum(string? s)
     {
         if (s.Length < 3)
         {
